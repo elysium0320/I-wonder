@@ -1,0 +1,8 @@
+.DS_Store
+.env*.local
+.next
+.npmrc
+node_modules
+tsconfig.tsbuildinfo
+yarn-debug.log*
+yarn-error.log*

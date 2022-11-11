@@ -1,0 +1,54 @@
+.Header {
+  :global {
+    background: #fff;
+    height: 112px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .container {
+      align-items: center;
+      display: flex;
+      height: inherit;
+      justify-content: center;
+
+      > * {
+        width: 33.3333333333%;
+
+        @media ( max-width: 767px ) {
+          width: 50%;
+        }
+      }
+
+      h2 {
+        align-items: center;
+        color: #999;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 400;
+        justify-content: center;
+        margin-bottom: 0;
+        text-align: center;
+
+        @media ( max-width: 767px ) {
+          display: none;
+        }
+
+        span {
+          display: inline-block;
+          margin-right: .5rem;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          &.arrow {
+            font-size: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

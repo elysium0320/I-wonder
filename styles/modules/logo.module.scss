@@ -1,0 +1,55 @@
+.Logo {
+  :global {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @media ( max-width: 767px ) {
+      justify-content: left;
+    }
+
+    .imageContainer {
+      border-radius: 50%;
+      height: 64px;
+      overflow: hidden;
+      position: relative;
+      width: 64px;
+
+      img {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate3d( -150px, -50%, 0 );
+        width: 240px;
+      }
+    }
+
+    h1 {
+      display: none;
+      font-family: 'Barriecito', cursive;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.stacked {
+  :global {
+    display: block;
+    text-align: center;
+
+    .imageContainer,
+    h1 {
+      margin: 0 auto;
+    }
+
+    .imageContainer {
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      display: block;
+    }
+  }
+}

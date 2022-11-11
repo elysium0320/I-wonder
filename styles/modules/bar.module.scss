@@ -1,0 +1,28 @@
+.Bar {
+  :global {
+    background: #dee2e6;
+    bottom: 0;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+
+    .async,
+    .solid {
+      height: inherit;
+    }
+
+    .async {
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-name: async;
+      background: linear-gradient( to right, transparent 0%, #000 50%, transparent 100% );
+      transform: translate3d( 0, 0, 0 );
+      width: 50%;
+    }
+
+    .solid {
+      background: #dee2e6;
+    }
+  }
+}

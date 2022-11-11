@@ -1,0 +1,32 @@
+.Search {
+  :global {
+    .form-floating {
+      margin-bottom: 1.5rem;
+
+      label {
+        line-height: 1.5rem;
+      }
+
+      img {
+        display: block;
+        right: .75rem;
+        position: absolute;
+        top: 50%;
+        transform: translate3d( 0, -50%, 0 );
+        width: 16px;
+      }
+    }
+
+    .buttonContainer {
+      text-align: center;
+
+      button {
+        margin-right: .5rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

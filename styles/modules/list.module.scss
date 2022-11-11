@@ -1,0 +1,108 @@
+.List {
+  :global {
+    margin-top: 112px;
+    padding: 3rem 0;
+
+    .ListItem {
+      list-style: none;
+      position: relative;
+
+      a {
+        text-decoration: none;
+
+        .listItemContainer {
+          border: 1px solid #dee2e6;
+          margin-bottom: 1.5rem;
+          overflow: hidden;
+          padding: 1.5rem;
+
+          &:hover {
+            border: 1px solid #000;
+            cursor: pointer;
+          }
+
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+            margin-bottom: 1.5rem;
+            padding-right: 1.5rem;
+          }
+
+          p {
+            color: #333;
+            line-height: 1.25rem;
+            margin-bottom: 1.5rem;
+
+            span {
+              color: #999;
+            }
+          }
+
+          .labels {
+            li {
+              border-radius: .25rem;
+              color: #fff;
+              display: inline-block;
+              font-size: .75rem;
+              margin: 0 .5rem .5rem 0;
+              padding: .5rem;
+            }
+          }
+        }
+      }
+
+      .icon {
+        height: 16px;
+        position: absolute;
+        right: 2.5rem;
+        top: 2rem;
+      }
+    }
+  }
+}
+
+.ProgressiveList {
+  :global {
+    margin-top: 112px;
+    padding: 3rem 0;
+
+    ul {
+      li {
+        div {
+          border: 1px solid #dee2e6;
+          margin-bottom: 1.5rem;
+          overflow: hidden;
+          padding: 1.5rem;
+
+          h3 {
+            background: #dee2e6;
+            height: 1.75rem;
+            margin-bottom: 1.5rem;
+          }
+
+          p {
+            background: #dee2e6;
+            height: 5rem;
+            margin-bottom: 1.5rem;
+          }
+
+          ul {
+            li {
+              background: #dee2e6;
+              border-radius: .25rem;
+              display: inline-block;
+              height: 1.75rem;
+              margin: 0 .5rem .5rem 0;
+              width: 3rem;
+
+              &:last-of-type {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
